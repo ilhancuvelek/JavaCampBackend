@@ -48,7 +48,7 @@ public class Product {
 	}
 
 	public Product(int id, int categoryId, String productName, double unitPrice, short unitsInStock,
-			String quantityPerUnit) {
+			String quantityPerUnit,Category category) {
 		super();
 		this.id = id;
 		//this.categoryId = categoryId;
@@ -56,8 +56,17 @@ public class Product {
 		this.unitPrice = unitPrice;
 		this.unitsInStock = unitsInStock;
 		this.quantityPerUnit = quantityPerUnit;
+		this.category=category;
 	}
 	
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
 	public int getId() {
 		return id;
 	}
